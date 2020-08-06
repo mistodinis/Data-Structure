@@ -35,7 +35,7 @@ int peek(Queue *q){
 
     return q->head->value;
 }
-
+// add "value" in queue "q"
 Queue* enQueue(Queue *q , int value){
 
     if(q == NULL)
@@ -50,7 +50,7 @@ Queue* enQueue(Queue *q , int value){
     return q;
 }
 
-
+// delete first element from queue "q"
 Queue* deQueue(Queue *q){
 
     if(q == NULL)
@@ -67,7 +67,7 @@ Queue* deQueue(Queue *q){
 
     return q;
 }
-
+// return size of "q"
 int size(Queue *q){
     return q->size;
 }
