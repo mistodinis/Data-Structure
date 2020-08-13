@@ -10,6 +10,6 @@ Below it is the data from tree.
              / \
            2     12
          /  \    /   \
-       1    3   11     21
+       1    3   11    21
                     /    \
                    19     25
