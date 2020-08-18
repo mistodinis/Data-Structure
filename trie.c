@@ -1,15 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+//Tries are trees but the are used to stock words , each node has only one letter 
+
 // Transform from characters to integer
 #define CHAR_TO_INDEX(c) ((int)c - (int)'a')
 // Calculate an array size
 #define ARRAY_SIZE(v) sizeof(v) / sizeof(v[0])
 
 typedef struct trie{
-
+    // Count represents if a word is ending in this node (1 = yes , 0 = no)
+    // nrfii represents how many times a word occurs
     int count , nrfii;
-
+    // 26 children for all 26 letter from 'a' to 'z'
     struct trie* child[26];
 }Trie;
 // Initialize a trie
