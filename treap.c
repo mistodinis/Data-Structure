@@ -2,6 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 #include <math.h>
+
+// Treaps are balanced BST(Binary Searching Trees)
 // Structure of a treap
 typedef struct treap{
 
